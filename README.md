@@ -1,29 +1,42 @@
 # Relaydesk
 
-Relaydesk is an open, clean-room architecture for a local-first remote-support desktop application.
+**Relaydesk is a consent-first Windows desktop foundation for transparent remote-support workflows.** It is an original clean-room Magnexis project; it contains no proprietary protocol, third-party code, recovered implementation material, or copied product assets.
 
-It is an original design for a consent-first remote-support product. It contains no proprietary remote-control protocol, third-party code, branding, assets, or recovered implementation material.
+## What v1.2.0 does
 
-## Start here
+- Creates a local-only six-digit pairing code with a visible 60-second expiry.
+- Models separate view and input consent states.
+- Shows exactly which capabilities are granted.
+- Persists a local consent timeline across restarts.
 
-- [Core architecture](docs/ARCHITECTURE.md)
-- [Android-first, no-store distribution](docs/ANDROID_DISTRIBUTION.md)
+It deliberately does **not** connect to devices, capture displays, inject input, access clipboard data, transfer files, or provide unattended access.
+
+## Install and run
+
+Download the Windows x64 ZIP from [Releases](../../releases), extract it, and run `Relaydesk.exe`. The .NET 10 Desktop Runtime is required. Developers can instead follow [RUNNING.md](RUNNING.md).
+
+## Safety baseline
+
+| Area | Current behavior |
+|---|---|
+| Pairing | Locally generated only; expires after 60 seconds |
+| Capabilities | View and input are independent, visible choices |
+| Remote access | Not implemented |
+| Audit | Local timeline only |
+| Telemetry | None |
+
+## Documentation
+
+- [Architecture](docs/ARCHITECTURE.md)
 - [Threat model](THREAT_MODEL.md)
 - [Security policy](SECURITY.md)
-- [Roadmap](ROADMAP.md)
 - [Test plan](docs/TEST_PLAN.md)
-- [Initial TypeScript protocol contracts](packages/protocol/README.md)
+- [Roadmap](ROADMAP.md)
+- [Release notes](docs/releases/1.2.0.md)
+- [Media-capture checklist](docs/MEDIA.md)
 - [Contributing](CONTRIBUTING.md)
 
-## Product principles
+## Media
 
-- Visible consent and immediate disconnect on both sides
-- Unprivileged UI with a minimal host service
-- Direct LAN path first; relay fallback second
-- Local audit trail and no telemetry by default
-- Open, versioned protocol designed independently
+We will only add screenshots, GIFs, and video recorded from a runnable build. [docs/MEDIA.md](docs/MEDIA.md) defines the required capture set and prevents illustrative mockups from being mislabeled as product behavior.
 
-## Status
-
-Implementation-ready foundation. No remote-control implementation has been published yet.
-\n## Run the desktop MVP\n\nWindows with the .NET 10 SDK: [run Relaydesk](RUNNING.md).\n
