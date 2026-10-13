@@ -1,0 +1,12 @@
+<Window x:Class="Relaydesk.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Relaydesk" Height="540" Width="780" Background="#111315" Foreground="#F5F2EA">
+  <Grid Margin="28"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+    <StackPanel><TextBlock Text="RELAYDESK" FontSize="28" FontWeight="SemiBold"/><TextBlock Text="Consent-first remote-support session demonstrator" Foreground="#AAB2BA" Margin="0,4,0,20"/><DockPanel><Button Content="Create pairing code" Click="Pair_Click" Padding="14,7" Margin="0,0,10,0"/><TextBlock x:Name="PairCode" FontSize="20" FontFamily="Consolas" VerticalAlignment="Center" Foreground="#6FA8FF"/></DockPanel></StackPanel>
+    <Border Grid.Row="1" Background="#191C1F" BorderBrush="#343A40" BorderThickness="1" CornerRadius="8" Margin="0,24"><StackPanel Margin="18"><TextBlock Text="Host consent" FontSize="18" FontWeight="SemiBold"/><TextBlock Text="This MVP does not capture screens, connect to devices, send input, or access clipboard data." Foreground="#AAB2BA" TextWrapping="Wrap" Margin="0,6,0,16"/>
+      <CheckBox x:Name="ViewConsent" Content="Allow this session to request screen viewing" Checked="ConsentChanged" Unchecked="ConsentChanged" Margin="0,0,0,8"/>
+      <CheckBox x:Name="InputConsent" Content="Allow input (separate capability)" IsEnabled="False" Checked="ConsentChanged" Unchecked="ConsentChanged" Margin="0,0,0,14"/>
+      <Button Content="End session" Click="End_Click" Padding="14,7" HorizontalAlignment="Left"/>
+      <TextBox x:Name="Timeline" IsReadOnly="True" AcceptsReturn="True" Height="150" Margin="0,18,0,0" Background="#111315" Foreground="#F5F2EA" BorderBrush="#343A40" Padding="10"/>
+    </StackPanel></Border>
+    <TextBlock Grid.Row="2" x:Name="Status" Foreground="#E4AF56" Text="Idle — no remote connection exists."/>
+  </Grid>
+</Window>
