@@ -2,16 +2,12 @@
 
 ## Reporting
 
-Do not open public issues for a suspected vulnerability. Until a private reporting channel is established, report only a minimal, non-sensitive description through the repository owner's GitHub profile and wait for a response before disclosing details.
+Do not publish vulnerabilities, pairing codes, recordings, device identifiers, or session logs in issues. Until a private reporting channel is established, send a minimal non-sensitive report through the repository owner's GitHub profile.
 
-## Product security baseline
+## Safety commitments
 
-- Read-only workspace access by default.
-- User approval before writes, commands, network access, or secret reads.
-- No arbitrary shell IPC from the renderer.
-- Secrets belong in OS-managed storage, never project files or logs.
-- Telemetry is opt-in and must disclose its payload and destination.
-
-## Non-goals
-
-Atelier does not claim to sandbox untrusted code. Any future execution feature must use an explicit, separately documented isolation boundary.
+- Every session is visible and revocable by either participant.
+- View, input, clipboard, files, and audio are separate capabilities.
+- Unattended access is off by default and outside the initial scope.
+- No hidden capture, silent installation, or broad Accessibility-service control.
+- Audit trails are local and secret-free.
