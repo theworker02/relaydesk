@@ -1,23 +1,28 @@
-# Relaydesk
+# Atelier
 
-Relaydesk is an open, clean-room architecture for a local-first remote-support desktop application.
+Atelier is an open, local-first desktop workspace concept for collaborating with AI on folders, notes, and structured tasks.
 
-It is an original design for a consent-first remote-support product. It contains no proprietary remote-control protocol, third-party code, branding, assets, or recovered implementation material.
+It is an original clean-room design. It does not contain third-party source code, branding, assets, protocols, or recovered implementation material.
 
 ## Start here
 
-- [Core architecture](docs/ARCHITECTURE.md)
-- [Android-first, no-store distribution](docs/ANDROID_DISTRIBUTION.md)
+- [Product and UX specification](docs/CLEAN_ROOM_DESIGN.md)
+- [Architecture](ARCHITECTURE.md)
+- [Roadmap](ROADMAP.md)
+- [Security policy](SECURITY.md)
+- [Development plan](docs/DEVELOPMENT.md)
+- [Initial TypeScript policy contracts](packages/contracts/README.md)
+- [Design tokens](atelier-design-tokens.json)
 - [Contributing](CONTRIBUTING.md)
 
-## Product principles
+## Principles
 
-- Visible consent and immediate disconnect on both sides
-- Unprivileged UI with a minimal host service
-- Direct LAN path first; relay fallback second
-- Local audit trail and no telemetry by default
-- Open, versioned protocol designed independently
+- Local work without an account
+- Explicit approval for sensitive actions
+- Provider portability
+- User-owned files and configuration
+- No telemetry by default
 
 ## Status
 
-Architecture and distribution specification. No remote-control implementation has been published yet.
+Implementation-ready foundation. The first runnable desktop slice has not yet been published.
