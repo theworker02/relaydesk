@@ -1,0 +1,14 @@
+name: Security design proposal
+description: Propose a consent or security design change.
+labels: ["security-design"]
+body:
+  - type: textarea
+    attributes:
+      label: Change and user benefit
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Abuse cases and mitigations
+    validations:
+      required: true
