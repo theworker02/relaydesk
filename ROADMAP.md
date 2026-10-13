@@ -1,23 +1,24 @@
 # Roadmap
 
-## Foundation — next
+## MVP — Windows desktop-to-desktop
 
-- Tauri + React workspace shell
-- SQLite schema and migration runner
-- folder-grant policy boundary
-- audit timeline and structured error model
+- pairing service with expiring codes
+- host-visible consent screen
+- view-only session over direct LAN
+- separate input approval
+- end-session controls and local timeline
 
-## Assisted editing
+## Network hardening
 
-- provider-neutral chat adapter
-- explicit context selection
-- unified-diff parser and hunk review
-- per-operation approvals
+- authenticated QUIC transport
+- direct-WAN candidate exchange
+- encrypted relay fallback
+- route label and diagnostic export
 
-## Local ecosystem
+## Android companion
 
-- local-model adapter
-- optional MCP registry with per-server permissions
-- exportable, secret-free workspace archive
+- signed universal APK release workflow
+- QR pairing and approved desktop viewing
+- view-only Android screen share using MediaProjection
 
-No dates are promises. Work is accepted when it is tested, documented, and usable offline where practical.
+No iOS distribution commitment is made without a separate Apple distribution decision.
