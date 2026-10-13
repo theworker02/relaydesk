@@ -1,0 +1,1 @@
+# Run Relaydesk\n\nRequires the .NET 10 SDK on Windows.\n\n\`\`\`powershell\ncd apps/desktop\ndotnet run\n\`\`\`\n\nThe MVP creates a local pairing code and models explicit view/input consent. It deliberately does not capture displays, establish a remote connection, send input, or read clipboard data.\n
