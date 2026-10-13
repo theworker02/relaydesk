@@ -1,2 +1,23 @@
-# relaydesk
-An original, consent-first remote-support architecture from Magnexis.
+# Relaydesk
+
+Relaydesk is an open, clean-room architecture for a local-first remote-support desktop application.
+
+It is an original design for a consent-first remote-support product. It contains no proprietary remote-control protocol, third-party code, branding, assets, or recovered implementation material.
+
+## Start here
+
+- [Core architecture](docs/ARCHITECTURE.md)
+- [Android-first, no-store distribution](docs/ANDROID_DISTRIBUTION.md)
+- [Contributing](CONTRIBUTING.md)
+
+## Product principles
+
+- Visible consent and immediate disconnect on both sides
+- Unprivileged UI with a minimal host service
+- Direct LAN path first; relay fallback second
+- Local audit trail and no telemetry by default
+- Open, versioned protocol designed independently
+
+## Status
+
+Architecture and distribution specification. No remote-control implementation has been published yet.
