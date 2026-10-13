@@ -26,3 +26,4 @@ It is an original design for a consent-first remote-support product. It contains
 ## Status
 
 Implementation-ready foundation. No remote-control implementation has been published yet.
+\n## Run the desktop MVP\n\nWindows with the .NET 10 SDK: [run Relaydesk](RUNNING.md).\n
